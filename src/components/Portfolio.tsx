@@ -86,17 +86,18 @@ const Portfolio = () => {
 
         <div className="max-w-6xl mx-auto px-4 md:px-8 relative">
           {/* Navbar */}
-          <nav className="flex flex-col md:flex-row justify-between items-center pt-6">
-            <a href="/" className="text-2xl font-semibold mb-4 md:mb-0">Hamza Zaka.</a>
-            <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
-              <div className="flex gap-4 md:gap-8">
-                <a href="#" className="hover:text-gray-200 transition-colors">Home</a>
-                <a href="#" className="hover:text-gray-200 transition-colors">Work</a>
-                <a href="#" className="hover:text-gray-200 transition-colors">Blog</a>
-                <a href="#" className="hover:text-gray-200 transition-colors">About</a>
-              </div>
-            </div>
-          </nav>
+         <nav className="flex flex-col md:flex-row justify-between items-center pt-6">
+  <Link href="/" className="text-2xl font-semibold mb-4 md:mb-0">Hamza Zaka.</Link>
+
+  <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+    <div className="flex gap-4 md:gap-8">
+      <Link href="/" className="hover:text-gray-200 transition-colors">Home</Link>
+      <Link href="/work" className="hover:text-gray-200 transition-colors">Work</Link>
+      <Link href="/blog" className="hover:text-gray-200 transition-colors">Blog</Link>
+      <Link href="/about" className="hover:text-gray-200 transition-colors">About</Link>
+    </div>
+  </div>
+</nav>
 
           {/* Hero Content */}
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 pt-16 md:pt-32">
